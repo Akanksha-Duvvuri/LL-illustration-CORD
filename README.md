@@ -1,14 +1,14 @@
-# 🧠 The Gossip Chain — Visualizing Linked Lists
+#  The Gossip Chain — Visualizing Linked Lists
 
 An interactive, story-driven visualization of **Linked Lists** using a real-world analogy: gossip spreading from person to person.
 
 ---
 
-## 📌 Concept
+##  Concept
 
 Imagine this:
 
-> Priya heard something. She told Rahul. Rahul told Sneha. Sneha told Arjun…
+> X heard something. X told Y. Y told Z. Z kept it to themselves...
 
 Nobody knows the full chain — only who they told next.
 
@@ -20,45 +20,45 @@ That’s exactly how a **Linked List** works.
 
 ---
 
-## 🎯 What This Project Demonstrates
+##  What This CORD illustration Project Demonstrates
 
 This project visually explains key Linked List operations:
 
-### 🔗 Structure
+### Structure
 
 * Head (starting node)
 * Tail (last node → points to `null`)
 * Nodes connected sequentially
 
-### 🔄 Traversal — **O(n)**
+### Traversal — Time Complexity **O(n)**
 
 * Step through the chain one person at a time
 * No shortcuts — must visit each node sequentially
 
-### ➕ Insert at Head — **O(1)**
+### Insert at Head — **O(1)**
 
 * Add a new “gossip starter”
 * Instantly becomes the new head
 
-### ➖ Delete Head — **O(1)**
+### Delete Head — **O(1)**
 
 * Remove the current head
 * Next node becomes the new head
 
 ---
 
-## 🖥️ Features
+## Features
 
-* 🎬 Step-by-step traversal visualization
-* 🟡 Active node highlighting
-* ➕ Insert new nodes dynamically
-* ➖ Delete head node
-* 🔁 Reset simulation
-* 🎨 Clean UI with animated nodes
+* Step-by-step traversal visualization
+* Active node highlighting
+* Insert new nodes dynamically
+* Delete head node
+* Reset simulation
+* Clean UI with animated nodes
 
 ---
 
-## 🧪 How to Use
+## How to Use
 
 1. Click **Start Traversal**
 2. Click **Next Step** to move through nodes
@@ -68,7 +68,7 @@ This project visually explains key Linked List operations:
 
 ---
 
-## 🧠 Why This Works
+## Why This Works
 
 Instead of abstract pointers, this project uses a **human analogy**:
 
@@ -82,7 +82,7 @@ This makes:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * React (Next.js)
 * TypeScript
@@ -91,7 +91,7 @@ This makes:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/Akanksha-Duvvuri/LL-illustration-CORD
@@ -102,7 +102,7 @@ npm run dev
 
 ---
 
-## 📷 Preview
+## Preview
 
 A simple chain of nodes visualized as people passing gossip:
 
@@ -130,19 +130,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
