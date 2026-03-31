@@ -39,7 +39,7 @@ export default function Home() {
 
   const insertAtHead = () => {
     if (!newName.trim()) return;
-    setNodes([{ id: Date.now(), name: newName }, ...nodes]);
+    setNodes([{ id: Date.now().toString(), name: newName }, ...nodes]);
     setNewName("");
     setCurrentIndex(null); // ✅ FIX: reset traversal on structural change
     setTraversalDone(false);
