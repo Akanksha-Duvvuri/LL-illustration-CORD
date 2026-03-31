@@ -186,7 +186,11 @@ export default function Home() {
           cursor: pointer;
         }
         .btn-danger:hover { background: #991b1b; }
-        .footerp { color: cadetblue; transition: color 0.25s ease; }
+        .footerp { 
+          color: cadetblue; 
+          transition: color 0.25s ease; 
+          margin-top: 100px;  
+        }
         .footerp:hover { color: white; text-decoration: underline; }
       `}</style>
     </div>
