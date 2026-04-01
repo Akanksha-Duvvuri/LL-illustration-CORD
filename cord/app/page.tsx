@@ -284,14 +284,13 @@ export default function Home() {
         <p>Inserting at or deleting head is <b>O(1)</b> — just rewire the start.</p>
       </div>
 
-      <Link href="https://github.com/Akanksha-Duvvuri/LL-illustration-CORD">
+      <Link href="https://github.com/Akanksha-Duvvuri/LL-illustration-CORD" style={{marginTop: "90px"}}>
         <p
           onMouseEnter={() => setLinkHovered(true)}
           onMouseLeave={() => setLinkHovered(false)}
           style={{
             color: linkHovered ? "white" : "cadetblue",
             transition: "color 0.25s ease",
-            marginTop: "100px",
           }}
         >
           View the code on Github — https://github.com/Akanksha-Duvvuri/LL-illustration-CORD
