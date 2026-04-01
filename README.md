@@ -1,93 +1,87 @@
-#  The Gossip Chain — Visualizing Linked Lists
+# The Gossip Chain — Visualizing Linked Lists
 
 An interactive, story-driven visualization of **Linked Lists** using a real-world analogy: gossip spreading from person to person.
 
 ---
 
-##  Concept
+## Concept
 
 Imagine this:
 
 > X heard something. X told Y. Y told Z. Z kept it to themselves...
 
-Nobody knows the full chain — only who they told next.
+Nobody knows the full chain — only who they told next. That's exactly how a **Linked List** works.
 
-That’s exactly how a **Linked List** works.
-
-* Each person = a **node**
-* Each person only knows who they told = `.next pointer`
-* The last person tells no one = `null`
+- Each person = a **node**
+- Each person only knows who they told = `.next pointer`
+- The last person tells no one = `null`
 
 ---
 
-##  What This CORD illustration Project Demonstrates
-
-This project visually explains key Linked List operations:
+## What This Project Demonstrates
 
 ### Structure
+- **Head** — the starting node
+- **Tail** — the last node, points to `null`
+- Nodes connected sequentially, one direction only
 
-* Head (starting node)
-* Tail (last node → points to `null`)
-* Nodes connected sequentially
+### Traversal — O(n)
+Step through the chain one person at a time. No shortcuts — every node must be visited in order.
 
-### Traversal — Time Complexity **O(n)**
+### Insert at Head — O(1)
+Add a new gossip starter. They instantly become the new head, no shifting needed.
 
-* Step through the chain one person at a time
-* No shortcuts — must visit each node sequentially
-
-### Insert at Head — **O(1)**
-
-* Add a new “gossip starter”
-* Instantly becomes the new head
-
-### Delete Head — **O(1)**
-
-* Remove the current head
-* Next node becomes the new head
+### Delete Head — O(1)
+Remove the current head. The next node takes over as the new head.
 
 ---
 
 ## Features
 
-* Step-by-step traversal visualization
-* Active node highlighting
-* Insert new nodes dynamically
-* Delete head node
-* Reset simulation
-* Clean UI with animated nodes
+- Step-by-step traversal with active node highlighting
+- Insert new nodes dynamically at the head
+- Delete the head node
+- Reset the simulation back to the original chain
+- Clean animated UI with pure inline styles
 
 ---
 
 ## How to Use
 
-1. Click **Start Traversal**
-2. Click **Next Step** to move through nodes
-3. Add a new person using **Insert at Head**
+1. Click **Start Traversal** to begin
+2. Click **Next Step** to move through each node one by one
+3. Add a new person using the input field + **Insert at Head**
 4. Remove the first person using **Delete Head**
-5. Click **Reset** to restore the original chain
+5. Click **Reset** to restore the original X → Y → Z chain
 
 ---
 
 ## Why This Works
 
-Instead of abstract pointers, this project uses a **human analogy**:
+Instead of abstract pointers and memory addresses, this project uses a human analogy:
 
-> Each person only remembers who they told — not who told them.
+> Each person only remembers who they told — not who told them. So going back would be impossible
 
-This makes:
+This makes `.next` intuitive, traversal obvious, and time complexity easier to reason about before you ever touch a whiteboard.
 
-* `.next` intuitive
-* traversal obvious
-* time complexity easier to understand
+---
+
+## Preview
+
+```
+X → Y → Z → NULL
+```
+
+The active node is highlighted in yellow. All other nodes dim during traversal so your eye follows the pointer naturally.
 
 ---
 
 ## Tech Stack
 
-* React (Next.js)
-* TypeScript
-* Tailwind CSS + custom styles
-* Lucide Icons
+- [Next.js](https://nextjs.org) (App Router)
+- TypeScript
+- Inline styles (no Tailwind)
+- [Lucide React](https://lucide.dev) for icons
 
 ---
 
@@ -100,39 +94,10 @@ npm install
 npm run dev
 ```
 
----
-
-## Preview
-
-A simple chain of nodes visualized as people passing gossip:
-
-```
-X → Y → Z → NULL
-```
+Open [http://localhost:3000](http://localhost:3000) to see it in the browser.
 
 ---
-
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy is via the [Vercel Platform](https://vercel.com/new). Push to GitHub, import the repo, and it's live — no config needed for a Next.js app.
